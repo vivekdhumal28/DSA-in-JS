@@ -17,6 +17,6 @@ Output: true
 
 var containsDuplicate = function (nums) {
   let set = new Set(nums); // contain unique elements
-  return set.size !== nums.length; // check size of set (unique elem is not equal to nums array length) == true
+  return set.size !== nums.length; // check size of set (unique elem is not equal to nums array length) = true
 };
 console.log(containsDuplicate([1, 2, 3, 4, 5]));
