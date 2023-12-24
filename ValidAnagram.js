@@ -28,7 +28,7 @@ function findAnagaram(str1, str2) {
     if (!counter[item]) {
       return false;
     }
-    counter[item]--;/
+    counter[item]--;
   }
 
   for (let key in counter) {
@@ -39,4 +39,4 @@ function findAnagaram(str1, str2) {
   return true;
 }
 
-console.log(findAnagaram("vivek1", "keviv"));
+console.log(findAnagaram("Vivek", "keviV"));
