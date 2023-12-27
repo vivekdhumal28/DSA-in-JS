@@ -26,12 +26,12 @@ function reverseInteger(x) {
   const INT_MIN = -(2 ** 31);
 
   const reverseStringInt = Math.abs(x).toString().split("").reverse().join("");
-  const reverseInt = parseInt(reverseStringInt, 10) * Math.sign(x);
+  const reverseInt = parseInt(reverseStringInt) * Math.sign(x);
   if (reverseInt > INT_MAX || reverseInt < INT_MIN) return 0;
 
   return reverseInt;
 }
 
-console.log(reverseInteger(123)); // Output: 321
+console.log(reverseInteger(123444)); // Output: 321
 console.log(reverseInteger(-123)); // Output: -321
 console.log(reverseInteger(120)); // Output: 21

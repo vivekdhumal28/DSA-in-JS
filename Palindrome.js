@@ -14,17 +14,12 @@ Explanation: From left to right, it reads -121. From right to left, it becomes 1
 */
 
 // function isPalindrome(x) {
-//   let str = String(x); // convert in string
-//   let isPal = str === str.split("").reverse().join("");
-
-//   if (isPal) {
-//     console.log(`${x} is palindrome`);
-//   } else {
-//     console.log(`${x} not a palindrome`);
-//   }
+//   return x < 0 ? false : x === +x.toString().split("").reverse().join("");
 // }
-// isPalindrome(1212121);
+// const result = isPalindrome(1212121);
+// console.log(result);
 
+//-----------------------------------------------------------------------------------------------------------
 // Solve without converting it to String
 
 // function isPalindromeNotString(x) {
@@ -41,3 +36,5 @@ Explanation: From left to right, it reads -121. From right to left, it becomes 1
 //   return x === reverseHalf || x === Math.floor(reverseHalf / 10);
 // }
 // console.log(isPalindromeNotString(123210));
+
+//-----------------------------------------------------------------------------------------------------------
