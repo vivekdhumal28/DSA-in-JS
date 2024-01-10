@@ -1,0 +1,1 @@
+counts[key] || 0
